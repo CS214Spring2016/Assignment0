@@ -1,0 +1,73 @@
+Tokenizer string is: this is a test case
+Word: this 
+Word: is 
+Word: a 
+Word: test 
+Word: case 
+
+Tokenizer string is: this[]isa t35t
+Word: this 
+Left Bracket: [ 
+Right Bracket: ] 
+Word: isa 
+Word: t35t
+ 
+Tokenizer string is: 0x3423rer[]
+Hexadecimal: 0x3423 
+Word: rer 
+Left Bracket: [ 
+Right Bracket: ] 
+
+Tokenizer string is: 0x3423rer<<
+Hexadecimal: 0x3423 
+Word: rer 
+Less than: < 
+Less than: < 
+
+Tokenizer string is: 0xTEST || i dont ???
+Bad Token: 0x 
+Word: TEST 
+Bitwise OR: | 
+Bitwise OR: | 
+Word: i 
+Word: dont 
+Ternary Operator: ? 
+Ternary Operator: ? 
+Ternary Operator: ? 
+
+Tokenizer string is: g 1234
+Word: g 
+Decimal: 1 
+Decimal: 2 
+Decimal: 3 
+Decimal: 4 
+
+Tokenizer string is: g 1.234
+Word: g 
+Float: 1.234 
+Tokenizer string is: g .1234
+Word: g 
+Bad Token: . 
+Decimal: 1 
+Decimal: 2 
+Decimal: 3 
+Decimal: 4 
+
+Tokenizer string is: g.1234
+Word: g 
+Bad Token: . 
+Decimal: 1 
+Decimal: 2 
+Decimal: 3 
+Decimal: 4 
+
+Tokenizer string is: i d0nt k}{now what 2write
+Word: i 
+Word: d0nt 
+Word: k 
+Right Brace: } 
+Left Brace: { 
+Word: now 
+Word: what 
+Decimal: 2 
+Word: write 
